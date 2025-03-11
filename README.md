@@ -21,28 +21,30 @@ SpinToDecide is an interactive decision-making wheel that allows you to input a 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/SpinToDecide.git
+   git clone https://github.com/lepari23/SpinToDecide.git
+   ```
 
-2.	Open the Project:
-    •	You can directly open index.html in your browser.
-    •	Alternatively, once completed, it will be made public using GitHub Pages.
+2. Open the Project:
+- Once cloned, you can open index.html directly in your browser.
+- Alternatively, visit: [Spin To Decide Live Demo](https://lepari23.github.io/SpinToDecide/)
 
-Usage
-	1.	Enter your options in the textarea (separate each option with a comma).
-	2.	Click Set Options to generate the wheel.
-	3.	Click Spin to spin the wheel.
-	4.	Watch the wheel spin and see the result displayed once it stops.
-	5.	Click Reset to clear the options and start over.
+Usage:
+1. Enter your options in the textarea (comma separated).
+2. Click Set Options to generate the wheel.
+3. Click Spin to spin the wheel.
+4. Watch the wheel spin and see the result displayed once it stops.
+5. Click Reset to clear the options and start over.
 
-How It Works
-	•	Canvas Drawing: The wheel is drawn on an HTML5 canvas with segments proportional to the number of options.
-	•	Animation: The spinning animation uses requestAnimationFrame and an ease-out effect for a smooth deceleration.
-	•	Result Calculation: Once the wheel stops, the segment at the top (pointing position) is calculated and displayed as the result.
+### How It Works
 
-Contributing
+- Canvas Drawing: The wheel is drawn on an HTML5 canvas with segments proportional to the number of options.
+- Animation: The spinning animation uses requestAnimationFrame and an ease-out effect for a smooth deceleration.
+- Result Calculation: Once the wheel stops, the segment at the top (pointing position) is calculated and displayed as the result.
+
+### Contributing
 
 Contributions are welcome! If you have ideas or improvements, please open an issue or submit a pull request.
 
-License
+### License
 
 This project is licensed under the MIT License.
