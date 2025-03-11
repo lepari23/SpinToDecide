@@ -4,28 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpinToDecide</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <h1>SpinToDecide</h1>
-      <div class="wheel-container">
-        <canvas id="wheel" width="500" height="500"></canvas>
-        <div class="pointer"></div>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-6">SpinToDecide</h1>
+      <div class="relative mx-auto w-[500px] h-[500px]">
+        <canvas
+          id="wheel"
+          width="500"
+          height="500"
+          class="border-2 border-gray-400 rounded-full"
+        ></canvas>
+        <div
+          class="pointer absolute -bottom-6 left-1/2 transform -translate-x-1/2 rotate-180"
+        ></div>
       </div>
-      <br />
-      <div class="controls">
+      <div class="mt-6">
         <textarea
           id="options"
           placeholder="Enter options separated by commas"
+          class="w-4/5 h-16 p-3 text-lg border border-gray-300 rounded mb-4"
         ></textarea>
-        <br />
-        <button id="setOptions">Set Options</button>
-        <button id="spin">Spin</button>
-        <button id="reset">Reset</button>
+        <div class="space-x-2">
+          <button
+            id="setOptions"
+            class="px-5 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          >
+            Set Options
+          </button>
+          <button
+            id="spin"
+            class="px-5 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          >
+            Spin
+          </button>
+          <button
+            id="reset"
+            class="px-5 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+          >
+            Reset
+          </button>
+        </div>
       </div>
-      <div id="result"></div>
+      <div id="result" class="mt-6 text-xl font-semibold"></div>
     </div>
     <script src="script.js"></script>
   </body>

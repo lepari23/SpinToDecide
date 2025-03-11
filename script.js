@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx.restore();
   };
 
-  // Function to spin the wheel.
   const spinWheel = () => {
     if (isSpinning || options.length === 0) return;
     isSpinning = true;
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calculate a random target angle (multiple full rotations plus extra)
     const spins = Math.floor(Math.random() * 3) + 3; // at least 3 full spins
     const randomAngle = Math.random() * Math.PI * 2;
-    const targetAngle = spins * Math.PI * 2 + randomAngle - 10; // slight offset for accurate wheel pointer
+    const targetAngle = spins * Math.PI * 2 + randomAngle - 10; // 10 as slight offset for accurate wheel pointer
 
     const duration = 4000; // 4 seconds animation
     const start = performance.now();
